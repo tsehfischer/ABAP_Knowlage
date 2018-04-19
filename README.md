@@ -1,2 +1,2 @@
 # ABAP_Knowlage
-����Ŀ���� ABAP֪ʶ�Ļ���
+该项目用于 ABAP知识的积累
