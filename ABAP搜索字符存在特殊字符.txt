@@ -1,0 +1,5 @@
+
+例如：选择条件中的物料号存在特殊字符#
+SELECT * FROM agr_texts
+  INTO TABLE tab_agr_texts
+  WHERE ( agr_name LIKE 'Z%#02%' ESCAPE '#' OR agr_name LIKE 'Z%#03%' ESCAPE '#') AND spras =  '1'.
