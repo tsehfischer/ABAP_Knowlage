@@ -11,8 +11,8 @@ SM30视图维护是通过 Table Control 创建的。
       WHEN 'tableName-col1Name'.
         <cols>-invisible = 'X'.
       WHEN 'tableName-col2Name'.
-        <cols>-tableName = 'X'.
-      WHEN 'ZIT0023T-col3Name'.
+        <cols>-invisible = 'X'.
+      WHEN 'tableName-col3Name'.
         <cols>-invisible = 'X'.
     ENDCASE.
   ENDLOOP.
