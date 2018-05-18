@@ -1,0 +1,18 @@
+SM30视图维护是通过 Table Control 创建的。
+在屏幕逻辑流PBO的LOOP循环中，添加 hide_col 的 output MODULE。
+系统创建的table control均由 tctrl_ 开头。
+
+在 hide_col 中定义如下代码：
+
+  FIELD-SYMBOLS: <cols> LIKE LINE OF tctrl_tableName-cols.
+
+  LOOP AT tctrl_tableName-cols ASSIGNING <cols>.
+    CASE <cols>-screen-name.
+      WHEN 'tableName-col1Name'.
+        <cols>-invisible = 'X'.
+      WHEN 'tableName-col2Name'.
+        <cols>-tableName = 'X'.
+      WHEN 'ZIT0023T-col3Name'.
+        <cols>-invisible = 'X'.
+    ENDCASE.
+  ENDLOOP.
